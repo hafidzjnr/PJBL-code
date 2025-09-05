@@ -1,0 +1,108 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to bottom, #1e1e1e, #00ff00); /* Latar belakang gelap */
+    color: #00ff00; /* Warna teks neon hijau */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1e1e1e; /* Warna latar belakang kontainer */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00; /* Efek neon glow */
+    width: 450px;
+    text-align: center;
+    border: 2px solid #00ff00; /* Border neon */
+}
+
+h1 {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00; /* Efek bayangan neon pada judul */
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #2e2e2e;
+    border: 2px solid #00ff00;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #00ff00;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    background-color: #00ff00;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 0 8px #00ff00;
+    transition: transform 0.2s; /* Transisi untuk efek hover */
+}
+
+#add-task-btn:hover {
+    transform: scale(1.05); /* Efek membesar saat di-hover */
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#task-list li {
+    background: #2e2e2e;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 5px #00ff00;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 0 5px #ff0000;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    #task-input {
+        font-size: 12px;
+    }
+
+    #add-task-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+  
+}
