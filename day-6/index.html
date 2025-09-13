@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Resep Makanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cari Resep Favoritmu</h1>
+      <div class="searchBar">
+        <input type="text" id="searchInput" placeholder="Cari berdasarkan bahan...">
+        <button id="searchBtn">Cari</button>
+      </div>
+    </header>
+
+    <main id="resepGaleri">
+    </main>
+
+    <div id="resepModal" class="modalContainer hidden">
+      <div class="modalContent">
+        <button class="closeBtn">&times;</button>
+        <h2 id="modalTitle"> Nama Resep</h2>
+        <img id="modalImg" src="" alt="gambar resep">
+          <h3>Bahan-bahan: </h3>
+          <ul id="modalIngredients">
+
+          </ul>
+          <h3>Instruksi: </h3>
+          <p id="modalInstruksi">Instruksi memasak...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
